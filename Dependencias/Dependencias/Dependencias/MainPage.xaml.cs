@@ -21,6 +21,12 @@ namespace Dependencias
                 await Navigation.PushAsync(new TextToSpeechDemo());
 
             };
+            Item3.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new BatteryDemo());
+
+            };
+
         }
     }
 }
