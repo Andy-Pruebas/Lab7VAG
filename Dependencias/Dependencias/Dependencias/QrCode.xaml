@@ -4,15 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Dependencias.MainPage">
-
-    <StackLayout>
-
+             x:Class="Dependencias.QrCode">
+    <ContentPage.Content>
         <StackLayout>
-            <Button x:Name="Item2" Text="TextToSpeechDemo"/>
-            <Button x:Name="Item3" Text="BatteryDemo"/>
-            <Button x:Name="Item4" Text="Codigo QR"/>
+            <Button Text="Click"  
+                x:Name="btnScan"  
+                Clicked="btnScan_Clicked"/>
+            <Entry x:Name="txtBarcode"  
+               Placeholder="Texto escaneado"/>
         </StackLayout>
-    </StackLayout>
-
+    </ContentPage.Content>
 </ContentPage>

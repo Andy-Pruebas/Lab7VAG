@@ -26,6 +26,11 @@ namespace Dependencias
                 await Navigation.PushAsync(new BatteryDemo());
 
             };
+            Item4.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new QrCode());
+
+            };
 
         }
     }
